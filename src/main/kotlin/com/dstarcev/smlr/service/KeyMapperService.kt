@@ -13,7 +13,7 @@ interface KeyMapperService {
         data class NotFound(val key: String) : Get
     }
 
-    fun add(key: String, link: String): Add
-
     fun getLink(key: String): Get
+
+    fun add(link: String): String
 }
